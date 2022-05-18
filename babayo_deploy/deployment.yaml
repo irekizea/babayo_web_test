@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: babayo-web
+  name: babayo-web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: babayo-web
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: babayo-web
+    spec:
+      containers:
+      - image: entwiz/babayo-web
+        name: babayo-web
