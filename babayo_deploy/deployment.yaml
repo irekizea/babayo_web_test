@@ -18,5 +18,5 @@ spec:
         app: babayo-web
     spec:
       containers:
-      - image: entwiz/babayo-web
+      - image: entwiz/babayo-web:latest
         name: babayo-web
