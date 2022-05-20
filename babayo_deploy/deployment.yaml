@@ -17,6 +17,7 @@ spec:
       labels:
         app: babayo-web
     spec:
+      type: LoadBalancer
       containers:
       - image: entwiz/babayo-web
         name: babayo-web
